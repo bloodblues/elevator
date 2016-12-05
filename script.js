@@ -6,7 +6,6 @@
 	var resetBtn = document.getElementById('resetBtn');
 	var chooseFloor = document.getElementsByClassName('chooseFloor');
     
-
 	var requestID;
 	var canvas = document.getElementById('stage');
 	var ctx = canvas.getContext('2d');
@@ -14,7 +13,6 @@
 	// Set the fill style for the drawing context.
 	ctx.fillStyle = '#212121';
 
-	
 	// Variables to for the drawing position and object.
 	var box = {
 		width:30,
@@ -34,7 +32,6 @@
 
 	// Draw the initial box on the canvas.
 	ctx.fillRect(posX, posY, boxWidth, boxHeight);
-
 
 	// Animate.
 	function animate() {
@@ -63,7 +60,6 @@
 				cancelAnimationFrame(requestID);
 			}
 		}
-
 
 		/*
 		if (posY >= 10) {
@@ -98,7 +94,6 @@
 			//asignando pisos
 			floorsAvaible[9-i] = currentY+5; 
 		}
-		
 	}
 
 	setFloors();
@@ -138,8 +133,6 @@
 		e.preventDefault();
 
 		// Reset the X position to 0.
-		
-
 		// Clear the canvas.
 		ctx.clearRect(posX, (posY + pixelsPerFrame),canvas.width, boxHeight);
 		posY = canvas.height-boxHeight;
