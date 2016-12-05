@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ascensor - Pedro C</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="page-wrapper">
+		<canvas id="stage" width="100" height="630"></canvas>
+		<div id="panel">
+			<h3>Ascensor Demo</h3>
+			<div class="controls">
+				<button type="button" id="resetBtn">Reset</button>
+				<button type="button" id="upBtn">Subir</button>
+				<button type="button" id="stopBtn">Detener</button>
+			</div>
+			<table>
+				<tr>
+					<td><button  class="chooseFloor" >1</button></td>
+					<td><button  class="chooseFloor" >2</button></td>
+					<td><button  class="chooseFloor" >3</button></td>
+				</tr>
+				<tr>
+					<td><button  class="chooseFloor" >4</button></td>
+					<td><button  class="chooseFloor" >5</button></td>
+					<td><button  class="chooseFloor" >6</button></td>
+				</tr>
+				<tr>
+					<td><button  class="chooseFloor" >7</button></td>
+					<td><button  class="chooseFloor" >8</button></td>
+					<td><button  class="chooseFloor" >9</button></td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+	
+	<script src="raf-polyfill.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
